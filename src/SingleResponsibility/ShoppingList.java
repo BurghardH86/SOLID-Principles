@@ -14,4 +14,21 @@ public class ShoppingList {
 		this.entries = entries;
 	}
 
+	public void addEntry(String text) {
+		entries.add((count++) + ": " + text);
+	}
+	
+	public void removeEntry(int index) {
+		entries.remove(index);
+	}
+	
+	@Override
+	public String toString() {
+		String output = "Einkaufsliste: \n";
+		for (String entry : entries) {
+			output += entry;
+			output += "\n";
+		}
+		return output;		
+	}
 }
