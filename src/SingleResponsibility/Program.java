@@ -10,7 +10,8 @@ public class Program {
 		shoppingList.addEntry("Apples");
 		shoppingList.addEntry("Cheese");
 		
-		shoppingList.saveToFile(shoppingList.getEntries(), new File("einkaufsliste.txt"));
+		Persistance p = new Persistance();
+		p.saveToFile(shoppingList.getEntries(), new File("einkaufsliste.txt"));
 	}
 
 }

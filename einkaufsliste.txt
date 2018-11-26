@@ -1,0 +1,3 @@
+0: Bananas
+1: Apples
+2: Cheese
