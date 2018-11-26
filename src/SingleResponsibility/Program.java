@@ -1,5 +1,7 @@
 package SingleResponsibility;
 
+import java.io.File;
+
 public class Program {
 
 	public static void main(String[] args) {
@@ -8,7 +10,7 @@ public class Program {
 		shoppingList.addEntry("Apples");
 		shoppingList.addEntry("Cheese");
 		
-		System.out.println(shoppingList);
+		shoppingList.saveToFile(shoppingList.getEntries(), new File("einkaufsliste.txt"));
 	}
 
 }
