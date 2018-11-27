@@ -1,8 +1,8 @@
 package LiskovSubstitution;
 
-public class Sqaure extends Rectangle{
+public class Square extends Rectangle{
 
-	public Sqaure(double size) {
+	public Square(double size) {
 		super(size, size);
 	}
 	
