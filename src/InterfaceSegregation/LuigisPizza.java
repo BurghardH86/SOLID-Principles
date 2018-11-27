@@ -1,6 +1,6 @@
 package InterfaceSegregation;
 
-public class LuigisPizza implements Restaurant{
+public class LuigisPizza implements Payment, Order{
 
 	@Override
 	public void payCreditCard() {
@@ -18,13 +18,7 @@ public class LuigisPizza implements Restaurant{
 	public void paySmartphone() {
 		// TODO Auto-generated method stub
 		
-	}
-
-	@Override
-	public void customerRatingService() {
-		// TODO Auto-generated method stub
-		
-	}
+	}	
 
 	@Override
 	public void takeTelephoneOrder() {

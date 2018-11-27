@@ -1,6 +1,6 @@
 package InterfaceSegregation;
 
-public class Vapiano implements Restaurant{
+public class Vapiano implements Payment, Rating, Order{
 
 	@Override
 	public void payCreditCard() {
