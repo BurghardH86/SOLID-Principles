@@ -12,7 +12,7 @@ public class SoftwareProject {
 	
 	public static void main(String[] args) {
 		
-		
+		// Depedency Inversion
 		Developer backendDev = new JavaDeveloper();
 		Developer frontendDev = new JavaScriptDeveloper();
 		
