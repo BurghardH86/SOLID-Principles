@@ -2,10 +2,17 @@ package OpenClosed;
 
 public class AreaCalculator {
 	
-	public double calculateArea(Rectangle[] rectangles) {
+	public double calculateArea(Object[] shapes) {
 		double area = 0;
-		for (Rectangle rectangle : rectangles) {
-			area += rectangle.getHeight() * rectangle.getWidth();
+		for (Object shape : shapes) {
+			if (shape instanceof Rectangle) {
+				Rectangle rectangle = (Rectangle) shape;
+				area += rectangle.getHeight() * rectangle.getWidth();
+			} else {
+				Circle circle = (Circle) shape;
+				area += circle.getRadius() * circle.getRadius() *Math.PI;
+			}
+			
 		}
 		return area;
 	}
