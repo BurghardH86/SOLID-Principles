@@ -2,6 +2,8 @@ package OpenClosed;
 
 public class AreaCalculator {
 	
+	// The following method hurts the open-closed principle if another 
+	// shape is added
 	public double calculateArea(Object[] shapes) {
 		double area = 0;
 		for (Object shape : shapes) {
