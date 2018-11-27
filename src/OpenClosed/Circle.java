@@ -1,6 +1,6 @@
 package OpenClosed;
 
-public class Circle {
+public class Circle extends Shape{
 
 	private double radius;
 	
@@ -14,5 +14,10 @@ public class Circle {
 
 	public void setRadius(double radius) {
 		this.radius = radius;
+	}
+
+	@Override
+	public double area() {
+		return getRadius() * getRadius() *Math.PI;
 	}
 }

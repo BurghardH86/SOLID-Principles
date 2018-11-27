@@ -9,10 +9,13 @@ public class Program {
 		
 		Circle circle1 = new Circle(3); // 28,274
 		
-		Object[] shapes = {rec1, rec2, rec3, circle1};
+		Shape[] shapes = {rec1, rec2, rec3, circle1};
 		
-		AreaCalculator ac = new AreaCalculator();
-		System.out.println("Fläche: " + ac.calculateArea(shapes));
+		double area = 0;
+		for (Shape shape : shapes) {
+			area += shape.area();
+		}
+		System.out.println("Fläche: " + area);
 	}
 
 }
